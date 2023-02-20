@@ -1,0 +1,56 @@
+[1mdiff --git a/react-shop/src/containers/CreateAccount.jsx b/react-shop/src/containers/CreateAccount.jsx[m
+[1mindex b16e5f7..27e34fb 100644[m
+[1m--- a/react-shop/src/containers/CreateAccount.jsx[m
+[1m+++ b/react-shop/src/containers/CreateAccount.jsx[m
+[36m@@ -18,7 +18,9 @@[m [mconst CreateAccount = () => {[m
+               <label htmlFor="password" className="label">Password</label>[m
+               <input type="text" id="password" placeholder="*********" className="input input-password" />[m
+           </div>[m
+[31m-        <input type="submit" value="Create account" className="primary-button login-button" />[m
+[32m+[m[32m          <a href='/password-recovery'>[m
+[32m+[m[32m            <input type="button" value="Create account" className="primary-button login-button" />[m
+[32m+[m[32m          </a>[m
+         [m
+       </form>[m
+     </div>[m
+[1mdiff --git a/react-shop/src/pages/Home.jsx b/react-shop/src/pages/Home.jsx[m
+[1mindex 54e55b5..f8aa4db 100644[m
+[1m--- a/react-shop/src/pages/Home.jsx[m
+[1m+++ b/react-shop/src/pages/Home.jsx[m
+[36m@@ -1,8 +1,9 @@[m
+ import React from 'react';[m
+[32m+[m[32mimport '../styles/Home.css'[m
+ [m
+ const Home = () => {[m
+   return ([m
+[31m-    <div>home page</div>[m
+[32m+[m[32m    <div><a href='/create-account'>home page</a></div>[m
+   );[m
+ }[m
+ [m
+[1mdiff --git a/react-shop/src/pages/NotFound.jsx b/react-shop/src/pages/NotFound.jsx[m
+[1mindex b644082..d4544ef 100644[m
+[1m--- a/react-shop/src/pages/NotFound.jsx[m
+[1m+++ b/react-shop/src/pages/NotFound.jsx[m
+[36m@@ -13,7 +13,7 @@[m [mconst NotFound = () => {[m
+           <span className="four"><span className="screen-reader-text">4</span></span>[m
+         </section>[m
+         <div className="link-container">[m
+[31m-          <a target="_blank" href="https://www.silocreativo.com/en/creative-examples-404-error-css/" className="more-link">Visit the original article</a>[m
+[32m+[m[32m          <a target="_blank" href="https://www.silocreativo.com/en/creative-examples-404-error-css/" className="more-link" rel="noreferrer">Visit the original article</a>[m
+         </div>[m
+       </div>[m
+     </>[m
+[1mdiff --git a/react-shop/src/routes/App.jsx b/react-shop/src/routes/App.jsx[m
+[1mindex 3bef58b..2ef0457 100644[m
+[1m--- a/react-shop/src/routes/App.jsx[m
+[1m+++ b/react-shop/src/routes/App.jsx[m
+[36m@@ -21,7 +21,7 @@[m [mfunction App() {[m
+         </Layout>[m
+       </BrowserRouter>[m
+     </>[m
+[31m-  );[m
+[32m+[m[32m  )[m
+ }[m
+ [m
+ export default App;[m

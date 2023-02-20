@@ -1,8 +1,9 @@
 import React from 'react';
+import '../styles/Home.css'
 
 const Home = () => {
   return (
-    <div>home page</div>
+    <div><a href='/create-account'>home page</a></div>
   );
 }
 

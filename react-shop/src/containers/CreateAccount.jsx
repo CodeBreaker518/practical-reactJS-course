@@ -18,7 +18,9 @@ const CreateAccount = () => {
               <label htmlFor="password" className="label">Password</label>
               <input type="text" id="password" placeholder="*********" className="input input-password" />
           </div>
-        <input type="submit" value="Create account" className="primary-button login-button" />
+          <a href='/password-recovery'>
+            <input type="button" value="Create account" className="primary-button login-button" />
+          </a>
         
       </form>
     </div>
