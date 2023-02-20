@@ -13,7 +13,9 @@ const PasswordRecovery = () => {
           <div className="email-img">
             <img src="./icons/email.svg" alt="email" />
           </div>
-          <button className="primary-button login-button">Login</button>
+          <a className="login-btn" href="/login">
+            <button className="primary-button login-button">Login</button>
+          </a>
           <p className="resend">
             <span>Didn't receive the email?</span>
             <a href="/">Resend</a>

@@ -5,6 +5,7 @@ import CreateAccount from '../containers/CreateAccount';
 import PasswordRecovery from '../containers/PasswordRecovery';
 import Home from '../pages/Home';
 import NotFound from '../pages/NotFound';
+import Login from '../containers/Login.jsx';
 import '../styles/global.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
               <Route exact path="/" element={<Home/>}/>
               <Route exact path="/create-account" element={<CreateAccount />}/>
               <Route exact path="/password-recovery" element={<PasswordRecovery/>}/>
+              <Route exact path="/login" element={<Login/>}/>
               <Route path="*" element={<NotFound/>}/>
           </Routes>
         </Layout>
