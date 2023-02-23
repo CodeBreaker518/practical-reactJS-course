@@ -2,11 +2,8 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './routes/App';
 
-// finding root
-const rootContainer = document.querySelector('#root')
-const root = createRoot(rootContainer);
-
-//rendering
+const rootContainer = document.getElementById('root')
+const root = createRoot(rootContainer)
 root.render(
-    <App />
+  <App/>
 )

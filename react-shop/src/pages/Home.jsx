@@ -1,10 +1,11 @@
 import React from 'react';
-import '../styles/Home.css'
-
+import ProductList from '../containers/ProductList';
 const Home = () => {
-  return (
-    <div><a href='/create-account'>home page</a></div>
-  );
+	return (
+		<>
+			<ProductList />
+		</>
+	);
 }
 
 export default Home;

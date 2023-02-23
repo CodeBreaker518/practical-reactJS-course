@@ -1,74 +1,63 @@
 @import './global.css';
 
-.CreateAccount {
+
+.MyAccount {
 	width: 100%;
 	height: calc(100vh - var(--header-height));
 	display: grid;
 	place-items: center;
 }
-.CreateAccount-container {
+.MyAccount-container {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	width: 300px;
 }
-.CreateAccount-title {
+.MyAccount-title {
 	font-size: var(--lg);
 	margin-bottom: 36px;
 	text-align: start;
 }
-.CreateAccount-Form {
+.MyAccount-Form {
 	display: flex;
 	flex-direction: column;
 }
-.CreateAccount-Form div {
+.MyAccount-Form div {
 	display: flex;
 	flex-direction: column;
 }
-.CreateAccount-label {
+.MyAccount-label {
 	font-size: var(--sm);
 	font-weight: bold;
 	margin-bottom: 4px;
 }
-.CreateAccount-input {
-	background-color: var(--text-input-field);
-	border: none;
-	border-radius: 8px;
-	height: 30px;
+.MyAccount-value {
+	color: var(--very-light-pink);
 	font-size: var(--md);
-	padding: 6px;
-	margin-bottom: 12px;
+	margin: 8px 0 32px 0;
 }
-.CreateAccount-input-name,
-.CreateAccount-input-email,
-.CreateAccount-input-password {
-	margin-bottom: 22px;
-}
-.CreateAccount-primary-button {
-	background-color: var(--hospital-green);
+.MyAccount-secondary-button {
+	background-color: var(--white);
 	border-radius: 8px;
-	border: none;
-	color: var(--white);
+	border: 1px solid var(--hospital-green);
+	color: var(--hospital-green);
 	width: 100%;
 	cursor: pointer;
 	font-size: var(--md);
 	font-weight: bold;
 	height: 50px;
 }
-.CreateAccount-login-button {
+.MyAccount-login-button {
 	margin-top: 14px;
 	margin-bottom: 30px;
 }
 @media (max-width: 640px) {
-	.CreateAccount-Form-container {
-		height: 100%;
-	}
-	.CreateAccount-Form {
+	.MyAccount-Form {
 		height: 100%;
 		justify-content: space-between;
 	}
 }
 @media (max-width: 350px) {
-	.CreateAccount-container {
+	.MyAccount-container {
 		width: 230px;
 	}
 }
